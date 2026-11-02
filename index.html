@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasneem Mohamed — Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script>
+    (function () {
+      var theme = 'dark';
+      try { theme = localStorage.getItem('theme') || 'dark'; } catch (e) { }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Tasneem<span>.</span>Mohamed</div>
+
+      <div class="nav-right">
+        <nav class="navlinks" id="navlinks">
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#projects">projects</a>
+          <a href="#education">education</a>
+          <a href="#services">services</a>
+          <a href="#contact">contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme">☀️</button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="navlinks">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+
+      <div class="about-top">
+
+        <div>
+          <h1>Tasneem Mohamed<br><span class="role">Backend Developer</span></h1>
+          <p class="lede">Junior Back-End Developer building web applications with PHP, Laravel &amp; MySQL — focused on
+            clean code, solid backend logic, and shipping real, working systems.</p>
+
+        </div>
+
+        <div class="profile-image">
+          <img src="profile.png" alt="Tasneem Mohamed">
+        </div>
+
+      </div>
+
+      <div class="terminal">
+        <div class="term-bar">
+          <span class="dot r"></span>
+          <span class="dot y"></span>
+          <span class="dot g"></span>
+          <span class="term-title">GET /api/developers/tasneem</span>
+        </div>
+
+        <div class="term-body">
+          <div id="jsonOut" class="mono"></div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section id="skills">
+      <p class="eyebrow">Skills &amp; Tools</p>
+      <div class="skill-file">
+        <div class="term-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="term-title">stack.json</span>
+        </div>
+        <div class="skill-groups">
+          <div class="skill-row">
+            <div class="cat">// backend</div>
+            <div class="pills">
+              <span class="pill">PHP</span><span class="pill">Laravel</span><span class="pill">MySQL</span>
+              <span class="pill">RESTful APIs</span><span class="pill">JWT</span><span class="pill">Swagger</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="cat">// frontend</div>
+            <div class="pills">
+              <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+              <span class="pill">Bootstrap</span><span class="pill">jQuery</span><span class="pill">AJAX</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="cat">// tooling</div>
+            <div class="pills">
+              <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">Postman</span>
+              <span class="pill">XAMPP</span><span class="pill">PHPMyAdmin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow">routes</p>
+      <h2 style="font-size:22px; color:var(--heading); margin-bottom:20px;">Personal Projects</h2>
+      <div class="projects">
+
+        <div class="project-item">
+          <div class="project-image">
+            <img src="Untitled5news.png" alt="News Portal">
+          </div>
+          <div class="endpoint">
+            <div class="endpoint-head">
+              <span class="method get">GET</span>
+              <span class="route">/projects/news-portal</span>
+              <span class="status">200 OK</span>
+            </div>
+            <span class="date">03/2026 – 04/2026</span>
+            <h3>News Portal</h3>
+            <p>A dynamic news portal on Laravel &amp; MySQL with 10+ core features, built to handle thousands of daily
+              visitors. Includes live widgets (ads, live TV, prayer calendar) and separate admin / client themes.</p>
+            <div class="tech-tags">
+              <span>Laravel</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+              <span>AJAX</span><span>RESTful APIs</span><span>Postman</span><span>Git/GitHub</span>
+            </div>
+            <button class="btn details-btn" data-project="news">View details</button>
+          </div>
+        </div>
+
+        <div class="project-item reverse">
+          <div class="project-image">
+            <img src="Untitledecommerce.png" alt="Ecommerce System">
+          </div>
+          <div class="endpoint">
+            <div class="endpoint-head">
+              <span class="method post">POST</span>
+              <span class="route">/projects/ecommerce-system</span>
+              <span class="status">200 OK</span>
+            </div>
+            <span class="date">09/2025 – 11/2025</span>
+            <h3>Ecommerce System</h3>
+            <p>Full-featured e-commerce platform with paginated data loading on the frontend and 3 integrated payment
+              methods, plus distinct admin and client interfaces.</p>
+            <div class="tech-tags">
+              <span>Laravel</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span><span>AJAX</span>
+            </div>
+            <button class="btn details-btn" data-project="ecommerce">View details</button>
+          </div>
+        </div>
+
+
+        <div class="project-item">
+
+          <div class="project-image">
+            <img src="Untitled33school.png" alt="School ERP">
+          </div>
+          <div class="endpoint">
+            <div class="endpoint-head">
+              <span class="method get">GET</span>
+              <span class="route">/projects/school-erp</span>
+              <span class="status">200 OK</span>
+            </div>
+            <span class="date">01/2026 – 03/2026</span>
+            <h3>School System (ERP)</h3>
+            <p>School ERP built with Laravel &amp; MySQL to manage students and staff across academics, attendance, and
+              finance — serving both admin dashboards and client-side views.</p>
+            <div class="tech-tags">
+              <span>Laravel</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span><span>AJAX</span>
+            </div>
+            <button class="btn details-btn" data-project="school">View details</button>
+          </div>
+        </div>
+
+        <div class="project-item reverse">
+
+          <div class="project-image">
+            <img src="Untitledecommerceapi.png" alt="Ecommerce API">
+          </div>
+          <div class="endpoint">
+            <div class="endpoint-head">
+              <span class="method post">POST</span>
+              <span class="route">/api/v1/ecommerce</span>
+              <span class="status">200 OK</span>
+            </div>
+            <span class="date">06/2026 – 06/2026</span>
+            <h3>Ecommerce RESTful API</h3>
+            <p>A RESTful API with JWT authentication, a generic response wrapper and exception handler for unified
+              responses, full CRUD for categories, sub-categories and products, and Swagger docs for every endpoint.</p>
+            <div class="tech-tags">
+              <span>Laravel</span><span>MySQL</span><span>JWT</span><span>Swagger</span>
+            </div>
+            <button class="btn details-btn" data-project="ecommerceapi">View details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <p class="eyebrow">Education</p>
+      <h2 style="font-size:22px; color:var(--heading); margin-bottom:6px;">Education &amp; Courses</h2>
+      <div class="log">
+        <div class="log-entry">
+          <span class="commit">#nti-backend</span><span class="when">06/2026 – Present</span>
+          <h3>National Telecommunication Institute (NTI)</h3>
+          <p>Mansoura University Branch — backend development track.</p>
+        </div>
+
+        <div class="log-entry">
+          <span class="commit">#courses</span><span class="when">bootcamps</span>
+          <h3>Full-Stack &amp; Laravel Courses</h3>
+          <p>Multiple hands-on courses covering PHP, Laravel, and full-stack web development, taken on Udemy.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services">
+      <p class="eyebrow">services</p>
+      <h2>What I Offer</h2>
+
+      <div class="services">
+
+        <div class="service-card">
+          <h3>Laravel Web Development</h3>
+          <p>Building secure, scalable web applications using Laravel, PHP, and MySQL with clean architecture and
+            maintainable code.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>RESTful API Development</h3>
+          <p>Designing and developing RESTful APIs with authentication, CRUD operations, validation, error handling, and
+            Swagger documentation.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Database Design</h3>
+          <p>Creating efficient MySQL database structures, relationships, migrations, and optimized queries for
+            real-world applications.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact">
+      <div class="contact-card">
+        <p class="eyebrow" style="justify-content:center; display:flex;">POST /contact</p>
+        <h2>Let's build something.</h2>
+        <p>Open to junior backend roles and freelance Laravel work.</p>
+        <div class="contact-links">
+          <a class="btn primary" href="mailto:tasneemm967@gmail.com">Email me</a>
+          <a class="btn" href="Tasneem-Mohamed-Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn" href="tel:01005095787">01005095787</a>
+          <a class="btn" href="https://wa.me/01142544697" target="_blank" rel="noopener">
+            WhatsApp
+          </a>
+          <a class="btn" href="https://github.com/TSnem12" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/tasneemm6498/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Tasneem Mohamed — Mansoura, Egypt</footer>
+
+  <dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-body">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <img id="modalImg" class="modal-img" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <ul id="modalFeatures"></ul>
+      <div class="tech-tags" id="modalTags"></div>
+      <div class="modal-links">
+        <a class="btn primary" id="modalGithub" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" id="modalLive" target="_blank" rel="noopener">Live demo</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const raw = [
+      ['  "name"', '"Tasneem Mohamed"', 'k', 's'],
+      ['  "role"', '"Backend Developer"', 'k', 's'],
+      ['  "location"', '"Mansoura, Egypt"', 'k', 's'],
+      ['  "stack"', '["PHP","Laravel","MySQL","RESTful APIs"]', 'k', 'n'],
+      ['  "status"', '"open_to_work"', 'k', 's'],
+    ];
+    const el = document.getElementById('jsonOut');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+
+    function buildLine(item) {
+      const [k, v, kc, vc] = item;
+      return `<span class="${kc}">${esc(k)}</span>: <span class="${vc}">${esc(v)}</span>,\n`;
+    }
+
+    async function typeJson() {
+      el.style.opacity = 1;
+      let out = '{\n';
+      el.innerHTML = out;
+      if (reduced) {
+        raw.forEach(item => out += buildLine(item));
+        out = out.replace(/,\n$/, '\n') + '}';
+        el.innerHTML = out;
+        return;
+      }
+      for (const item of raw) {
+        const line = buildLine(item);
+        // reveal char by char (plain text length, tags added after)
+        const plain = `${item[0]}: ${item[1]},`;
+        let shown = '';
+        for (let i = 0; i < plain.length; i++) {
+          shown += plain[i];
+          el.innerHTML = out + shown + '<span class="cursor"></span>';
+          await new Promise(r => setTimeout(r, 8));
+        }
+        out += line;
+        el.innerHTML = out + '<span class="cursor"></span>';
+      }
+      out = out.replace(/,\n$/, '\n') + '}';
+      el.innerHTML = out;
+    }
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { typeJson(); obs.disconnect(); }
+      });
+    }, { threshold: .3 });
+    obs.observe(document.querySelector('.terminal'));
+
+    // Hamburger menu
+    const menuToggle = document.getElementById('menuToggle');
+    const navlinks = document.getElementById('navlinks');
+
+    function setMenu(open) {
+      navlinks.classList.toggle('open', open);
+      menuToggle.setAttribute('aria-expanded', open);
+      menuToggle.textContent = open ? '✕' : '☰';
+    }
+
+    menuToggle.addEventListener('click', () => {
+      setMenu(!navlinks.classList.contains('open'));
+    });
+
+    navlinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => setMenu(false));
+    });
+
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+      themeToggle.setAttribute('aria-label',
+        theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+      try { localStorage.setItem('theme', theme); } catch (e) { }
+    }
+
+    applyTheme(document.documentElement.getAttribute('data-theme') || 'dark');
+
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+
+    // Project modals
+    const projects = {
+      news: {
+        title: 'News Portal',
+        img: 'Untitled5news.png',
+        desc: 'A dynamic news portal on Laravel & MySQL, built to handle thousands of daily visitors.',
+        features: [
+          '10+ core features',
+          'Live widgets: ads, live TV, prayer calendar',
+          'Separate admin and client themes'
+        ],
+        tags: ['Laravel', 'MySQL', 'Bootstrap', 'JavaScript', 'AJAX', 'RESTful APIs', 'Postman', 'Git/GitHub'],
+        github: 'https://github.com/TSnem12/news-laravel',
+        live: ''
+      },
+      ecommerce: {
+        title: 'Ecommerce System',
+        img: 'Untitledecommerce.png',
+        desc: 'Full-featured e-commerce platform with distinct admin and client interfaces.',
+        features: [
+          'Paginated data loading on the frontend',
+          '3 integrated payment methods',
+          'Separate admin and client interfaces'
+        ],
+        tags: ['Laravel', 'MySQL', 'Bootstrap', 'JavaScript', 'AJAX'],
+        github: 'https://github.com/TSnem12/Laravel-Ecommerce',
+        live: ''
+      },
+      school: {
+        title: 'School System (ERP)',
+        img: 'Untitled33school.png',
+        desc: 'School ERP to manage students and staff, serving both admin dashboards and client-side views.',
+        features: [
+          'Academics management',
+          'Attendance tracking',
+          'Finance module'
+        ],
+        tags: ['Laravel', 'MySQL', 'Bootstrap', 'JavaScript', 'AJAX'],
+        github: 'https://github.com/TSnem12/Laravel-SchoolSystem',
+        live: ''
+      },
+      ecommerceapi: {
+        title: 'Ecommerce RESTful API',
+        img: 'Untitledecommerceapi.png',
+        desc: 'A RESTful API for an e-commerce system with secure authentication and full documentation.',
+        features: [
+          'JWT authentication',
+          'Generic response wrapper and exception handler for unified responses',
+          'Full CRUD for categories, sub-categories and products',
+          'Swagger docs for every endpoint'
+        ],
+        tags: ['Laravel', 'MySQL', 'JWT', 'Swagger'],
+        github: 'https://github.com/TSnem12/ecommerce-api',
+        live: ''
+      }
+    };
+
+    const modal = document.getElementById('projectModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalFeatures = document.getElementById('modalFeatures');
+    const modalTags = document.getElementById('modalTags');
+    const modalGithub = document.getElementById('modalGithub');
+    const modalLive = document.getElementById('modalLive');
+
+    function setLink(a, url) {
+      if (url) { a.href = url; a.hidden = false; }
+      else { a.removeAttribute('href'); a.hidden = true; }
+    }
+
+    function openProject(key) {
+      const p = projects[key];
+      if (!p) return;
+      modalImg.src = p.img;
+      modalImg.alt = p.title;
+      modalTitle.textContent = p.title;
+      modalDesc.textContent = p.desc;
+      modalFeatures.innerHTML = '';
+      p.features.forEach(f => {
+        const li = document.createElement('li');
+        li.textContent = f;
+        modalFeatures.appendChild(li);
+      });
+      modalTags.innerHTML = '';
+      p.tags.forEach(t => {
+        const s = document.createElement('span');
+        s.textContent = t;
+        modalTags.appendChild(s);
+      });
+      setLink(modalGithub, p.github);
+      setLink(modalLive, p.live);
+      modal.showModal();
+    }
+
+    document.querySelectorAll('.details-btn').forEach(btn => {
+      btn.addEventListener('click', () => openProject(btn.dataset.project));
+    });
+
+    document.getElementById('modalClose').addEventListener('click', () => modal.close());
+
+    // click on the dark backdrop closes it
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.close();
+    });
+
+  </script>
+
+</body>
+
+</html>
